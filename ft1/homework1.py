@@ -46,7 +46,6 @@ def plot_line(history):
     plt.plot(list3, label="2",color="green")
     plt.title("Random seed: 0")
     plt.legend()
-    plt.grid('on')
     plt.show()
 
 def start_test(seeds = 10):
