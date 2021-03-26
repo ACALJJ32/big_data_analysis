@@ -17,7 +17,7 @@ shap_values = explainer(X)
 # shap.plots.force(shap_values[0])
 
 # visualize all the training set predictions
-# shap.plots.force(shap_values)
+# shap.plots.force(shap_values[0])
 
 # create a dependence scatter plot to show the effect of a single feature across the whole dataset
 # shap.plots.scatter(shap_values[:,"RM"], color=shap_values)
@@ -25,4 +25,4 @@ shap_values = explainer(X)
 # summarize the effects of all the features
 # shap.plots.beeswarm(shap_values)
 
-# shap.plots.bar(shap_values)
+shap.plots.bar(shap_values)

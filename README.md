@@ -65,4 +65,15 @@ def plot_line(history):
 import xgboost
 import shap
 ```
+#### 使用的数据集是波士顿房价数据
+#### 绘制图像，下图展示的是各种特征对最终的输出值贡献的大小
+![Alt text](https://img-blog.csdnimg.cn/20210326130727193.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjEzMDMwMA==,size_16,color_FFFFFF,t_70#pic_center)
+#### 下图是针对单个数据的解释说明，比如RM(一栋房子中的平均房间数)这一指标，将其与RAD(告诉公路可达性指标)进行交互，红色的代表sharp贡献值很高。
+![Alt text](https://img-blog.csdnimg.cn/20210326135238529.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjEzMDMwMA==,size_16,color_FFFFFF,t_70#pic_center)
+#### 
+![Alt text](https://img-blog.csdnimg.cn/20210326135429807.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjEzMDMwMA==,size_16,color_FFFFFF,t_70#pic_center)
+#### 我们也可以取每个特征的SHAP值的绝对值的平均值来得到一个标准的条形图(为多类输出产生堆叠的条形图)。
+![Alt text](https://img-blog.csdnimg.cn/20210326135552891.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjEzMDMwMA==,size_16,color_FFFFFF,t_70#pic_center)
+
+#### 参考链接：https://github.com/slundberg/shap
 
